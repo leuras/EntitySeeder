@@ -9,7 +9,7 @@ import com.github.entityseeder.Factory;
 public class Test {
 
 	public static void main(String[] args) {
-		List<EntitySeed> seeds = Factory.run(new UserSeed(new Locale("pt-BR")), 10);
+		List<EntitySeed> seeds = Factory.run(new UserSeeder(new Locale("pt-BR")), 10);
 		
 		for(EntitySeed seed : seeds) {
 			User u = (User) seed;

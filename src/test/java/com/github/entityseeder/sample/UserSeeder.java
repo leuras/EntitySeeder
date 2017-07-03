@@ -7,14 +7,14 @@ import org.mindrot.jbcrypt.BCrypt;
 import com.github.entityseeder.AbstractEntitySeeder;
 import com.github.javafaker.Name;
 
-public class UserSeed extends AbstractEntitySeeder<User> {
+public class UserSeeder extends AbstractEntitySeeder<User> {
 	
 	private static String password = BCrypt.hashpw("secret", BCrypt.gensalt());
 	
-	public UserSeed(Locale locale) {
+	public UserSeeder(Locale locale) {
 		super(locale);
 	}
-
+	
 	public User make() {
 		
 		Name name = this.getFaker().name();

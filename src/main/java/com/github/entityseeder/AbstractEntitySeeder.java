@@ -4,7 +4,7 @@ import java.util.Locale;
 
 import com.github.javafaker.Faker;
 
-public abstract class AbstractEntitySeeder<K> implements EntitySeeder<K> {
+public abstract class AbstractEntitySeeder<K extends EntitySeed> implements EntitySeeder<K> {
 	
 	private Faker faker;
 	

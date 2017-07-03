@@ -12,7 +12,7 @@ public class Factory {
 	public static List<EntitySeed> run(final EntitySeeder<? extends EntitySeed> seeder, final int n) {
 		List<EntitySeed> seeds = new ArrayList<EntitySeed>();
 
-		for (int i = 0; i <= n; i++)
+		for (int i = 0; i < n; i++)
 			seeds.add(seeder.make());
 
 		return seeds;
